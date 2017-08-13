@@ -9,10 +9,12 @@
     <description>Multi module, EJB project, with Jersey for RESTful services, and DI via annnotations, using TomEE</description>
     <modules>
         <module>ejb-ejbs</module>
+        <module>ejb-web</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
+        <tomee.version>7.0.3</tomee.version>
         <hibernate.version>5.2.10.Final</hibernate.version>
     </properties>
     <dependencyManagement>
