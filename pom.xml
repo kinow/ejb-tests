@@ -62,7 +62,7 @@
             </dependency>
 
             <!-- For the web application -->
-
+            <!-- Jersey brings 2.0.x, TomEE contains 2.1... -->
             <dependency>
                 <groupId>javax.ws.rs</groupId>
                 <artifactId>javax.ws.rs-api</artifactId>
