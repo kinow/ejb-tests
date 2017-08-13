@@ -70,6 +70,14 @@
                     <source>${java.version}</source>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.tomee.maven</groupId>
+                <artifactId>tomee-maven-plugin</artifactId>
+                <version>${tomee.version}</version>
+                <configuration>
+                    <webapps>${project.groupId}:ejb-web:${project.version}:war</webapps>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 </project>
