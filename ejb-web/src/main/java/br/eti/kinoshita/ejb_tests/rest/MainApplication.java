@@ -1,17 +1,24 @@
 package br.eti.kinoshita.ejb_tests.rest;
 
-import org.glassfish.jersey.jackson.JacksonFeature;
-import org.glassfish.jersey.logging.LoggingFeature;
-import org.glassfish.jersey.server.ResourceConfig;
-import org.glassfish.jersey.server.filter.RolesAllowedDynamicFeature;
+import java.util.Set;
 
-public class MainApplication extends ResourceConfig {
+import javax.ws.rs.ApplicationPath;
+import javax.ws.rs.core.Application;
+
+@ApplicationPath("/api")
+public class MainApplication extends Application {
 
     public MainApplication() {
         super();
-        packages("br.eti.kinoshita.ejb_tests.rest");
-        register(LoggingFeature.class);
-        register(JacksonFeature.class);
-        register(RolesAllowedDynamicFeature.class);
+    }
+
+    @Override
+    public Set<Object> getSingletons() {
+        return super.getSingletons();
+    }
+
+    @Override
+    public Set<Class<?>> getClasses() {
+        return super.getClasses();
     }
 }
